@@ -11,7 +11,7 @@ Clona este repositorio:
    
 ## Contribuciones
 
-¡Siente libre de contribuir al proyecto! Para hacerlo.
+¡Siente libre de contribuir al proyecto!
 
 ## Agradecimientos
 
