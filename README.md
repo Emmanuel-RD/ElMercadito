@@ -18,4 +18,4 @@ El Mercadito es una aplicación diseñada para [breve descripción de la funcion
 
 ## Agradecimientos
 
-Agradezco a [profesor o fuente de inspiración] por su apoyo y orientación durante este aprendizaje.
+Agradezco a Fernandito <3 por su apoyo y orientación durante este aprendizaje.
