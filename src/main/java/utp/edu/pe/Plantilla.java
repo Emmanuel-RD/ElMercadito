@@ -46,17 +46,33 @@ public class Plantilla {
 
     public void buscar (List<Producto> productos){
         listar(productos);
-        System.out.print("INGRESE EL CODIGO DEL PRODUCTO: ");
-        Iterator<Producto> it = productos.iterator();
-        sc.nextLine();
-        String codigo = sc.nextLine();
-        while(it.hasNext()){
-            Producto p = it.next();
-            if (p.getCodigo().equals(codigo)){
-                carrito.add(p);
+        boolean comprando = true;
+        while (comprando){
+            System.out.print("INGRESE EL CODIGO DEL PRODUCTO (X PARA SALIR): ");
+            String codigo = sc.next();
+            if (codigo.equals("X")){
+                comprando = false;
+            }else{
+                boolean productoEncontrado = false;
+                Iterator<Producto> it = productos.iterator();
+                sc.nextLine();
+                while(it.hasNext()){
+                    Producto p = it.next();
+                    if (p.getCodigo().equals(codigo)){
+                        carrito.add(p);
+                        productoEncontrado = true;
+                        break;
+                    }
+                }
+                if (productoEncontrado){
+                    System.out.println("SE AÑADIDO CORRECTAMENTE");
+                }else{
+                    System.out.println("NO SE ENCONTRADO");
+                }
             }
         }
         System.out.println("LISTA DE COMPRAS:");
         listar(carrito);
     }
 }
+
