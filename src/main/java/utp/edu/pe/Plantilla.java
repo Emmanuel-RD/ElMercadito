@@ -1,9 +1,6 @@
 package utp.edu.pe;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Plantilla {
     boolean salir = false;
@@ -11,27 +8,40 @@ public class Plantilla {
     List <Producto> carrito = new LinkedList<>();
     public void mostrarMenu(List<Producto> productos) {
         while (!salir) {
-            String menu = """
-                    ===== EL MERCADITO =====
+            try {
+                String menu = """
+                    \n===== EL MERCADITO =====
                     1. LISTAR PRODUCTOS
-                    2. COMPAR
+                    2. COMPRAR
                     3. IMPRIMIR PDF
                     4. SALIR
                     ========================
                     Elija una opción: \t""";
-            System.out.print(menu);
-            int valor = sc.nextInt();
-            switch (valor) {
-                case 1:
-                    listar(productos);
-                    break;
-                case 2:
-                    buscar(productos);
-                case 3:
-                    break;
-                case 4:
-                    salir = true;
-                    System.out.print("Saliendo...........");
+                System.out.print(menu);
+
+                int valor = sc.nextInt();
+                sc.nextLine();
+
+                switch (valor) {
+                    case 1:
+                        listar(productos);
+                        break;
+                    case 2:
+                        buscar(productos);
+                        break;
+                    case 3:
+                        System.out.println("SIN FUNCIONALIDAD");
+                        break;
+                    case 4:
+                        salir = true;
+                        System.out.println("Saliendo...........");
+                        break;
+                    default:
+                        System.out.println("OPCION NO VALIDA!!!!");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("OCURRIO UN ERROR: " + e.getMessage());
+                sc.nextLine();
             }
         }
     }
