@@ -15,4 +15,4 @@ Clona este repositorio:
 
 ## Agradecimientos
 
-Agradezco a Fernandito <3 por su apoyo y orientación durante este aprendizaje.
+Agradezco a Fernandito🤩 por su apoyo y orientación durante este aprendizaje.
