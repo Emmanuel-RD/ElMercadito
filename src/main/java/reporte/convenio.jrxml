@@ -1,0 +1,471 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="convenio" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a4d0bca2-f380-4514-a1db-bc28ecc93f15">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<query language="sql"><![CDATA[]]></query>
+	<title height="69" splitType="Stretch">
+		<element kind="staticText" uuid="42a88757-62a0-42c4-84ab-cc13283d64a8" positionType="Float" x="197" y="30" width="160" height="20" forecolor="#71B222" fontName="Times New Roman" fontSize="15.0" hTextAlign="Center">
+			<text><![CDATA[CONVENIO DE VENTA]]></text>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<property name="com.jaspersoft.studio.element.name" value="titulo"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="textField" uuid="7b41f1d8-0411-4b0b-8acc-42ec9a678f5e" x="243" y="50" width="75" height="12" markup="html" fontName="Times New Roman" fontSize="10.0" hTextAlign="Center">
+			<expression><![CDATA[new SimpleDateFormat("dd/MM/yy").format(new java.util.Date())]]></expression>
+			<property name="com.jaspersoft.studio.element.name" value="fecha"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="image" uuid="35ca913c-6789-4e79-ba9f-d43c42c59e9a" x="30" y="-18" width="89" height="80" scaleImage="RetainShape" onErrorType="Icon" hImageAlign="Center" vImageAlign="Middle">
+			<expression><![CDATA["C:\\Users\\emmar\\OneDrive - Universidad Tecnologica del Peru\\JAVA\\ElMercadito\\src\\main\\java\\reporte\\logo_principal.png"]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</title>
+	<detail>
+		<band height="90">
+			<element kind="line" uuid="8034e401-8b40-4ee6-a02c-2db605895da6" positionType="Float" mode="Opaque" x="30" y="10" width="500" height="1" forecolor="#000000" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="horizontal"/>
+			</element>
+			<element kind="staticText" uuid="c36bcc44-0bbf-4285-aafa-cbe15ce9e128" x="30" y="0" width="60" height="10" fontName="Times New Roman" fontSize="8.0" bold="true">
+				<text><![CDATA[Forma de Pago:]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="367e6748-83a6-46ce-b9f3-07273c5284be" x="90" y="0" width="110" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["Voucher deposito en cta."]]></expression>
+			</element>
+			<element kind="staticText" uuid="894ae080-8f99-4367-b024-dde6b9452b83" x="30" y="20" width="80" height="10" fontName="Times New Roman" fontSize="8.0" bold="true">
+				<text><![CDATA[Información del cliente]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="bf894fad-df42-4252-ba8e-abd3f2dc373e" x="100" y="40" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["Billy Emmanuel Reaño "]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="868ce9d1-bf7a-4d56-975d-80aa8a6898f4" positionType="Float" stretchType="ElementGroupHeight" x="100" y="50" width="180" height="10" markup="none" fontName="Times New Roman" fontSize="8.0" printWhenDetailOverflows="true" vTextAlign="Bottom">
+				<expression><![CDATA["Urb. Guardia Republicana Mz C lote 13"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="stretchType" value="ElementGroupHeight"/>
+			</element>
+			<element kind="textField" uuid="bb90f2f3-f8e3-433a-8e88-6266851e1d03" x="100" y="60" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["example@gmail.com"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="333e50e3-bffb-4ede-8674-9de414d86323" x="100" y="70" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["Doctor"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="9029a1b6-4dd7-47f9-907b-798beee45855" x="57" y="40" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Cliente	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b40ec49c-84d2-4611-83b6-f0353d519cbf" x="57" y="50" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Dirección	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="470c33fb-6d46-474a-95d5-2db4318465e9" x="57" y="70" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Ocupación	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="638a64b9-d7fe-4f9a-8246-e5d62ac028a1" x="57" y="60" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Email	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="07263716-324d-460a-87cf-cb692fc3ef2f" x="350" y="40" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[DNI	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="094be48f-c6ad-4874-b823-862cdf1ea17d" x="350" y="50" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Fec. Nac.	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="747e63d7-3525-48ad-b033-68fbab5a3c8d" x="350" y="60" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Celular	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="a6dada99-1819-47ba-aec5-5f9e9cc11902" x="350" y="70" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Ingr. Neto	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="367f0781-08d2-47d3-82e7-c984d2cdc3fd" x="393" y="40" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["76961302"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="589c2890-59ac-4cba-b18f-67bbabbe7168" x="393" y="50" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["31/12/2003"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="0bf901bb-0276-49aa-8f90-6e30ad11cdfe" x="393" y="60" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["930805480"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="c713b586-aa04-4365-a3a0-0cc07d5d13a2" x="393" y="70" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 32202.00"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+		</band>
+		<band height="110">
+			<element kind="line" uuid="1322c6d4-5e3a-4a64-8721-85fc2f49cfb1" positionType="Float" mode="Opaque" x="30" y="0" width="500" height="1" forecolor="#000000" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="horizontal"/>
+			</element>
+			<element kind="staticText" uuid="7f44e498-4684-406a-a07d-3ef34c528e32" x="30" y="10" width="85" height="10" fontName="Times New Roman" fontSize="8.0" bold="true">
+				<text><![CDATA[Informacion de la venta ]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="689879da-a6a8-45ec-8ba5-c9aaa468d871" x="30" y="30" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Importe	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b41605ce-0280-4c23-ba6d-c6a64371b961" x="30" y="40" width="185" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Por concepto de venta de la siguiente unidad de vivienda]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="248a6fda-e8be-44f0-8721-33af8327164e" x="73" y="30" width="10" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[ s/.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="78380674-2311-4d08-9c81-cff50077d482" x="80" y="30" width="70" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["32202.00"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="394b37a7-766b-4899-8af0-f0acfd06cb9c" x="57" y="60" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Proyecto	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="62ab25a9-77d4-4f27-8011-401eff160005" x="100" y="60" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["Valle Reque - Etapa 4"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="636d5289-01af-44c3-b659-067850cb0c95" x="57" y="70" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Manzana	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="8f78e626-90f0-4c06-8055-fc5bbcbf00ce" x="57" y="80" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Unidad	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="d47f26f9-7e94-40b3-993c-db713fd82f38" x="57" y="90" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Á. Lote m2	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="5145ba84-4efd-459f-b150-b761e9fb4733" x="100" y="70" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["I - 6"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="f056f4f6-8489-4a8c-8314-d306c24978b8" x="100" y="80" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["4"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="f71e06d1-b76b-4507-8496-8c28bfc760fe" x="100" y="90" width="80" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["60"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="e775b39b-47bb-49d2-a5db-d187f1c5664a" x="350" y="60" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[N° cuotas	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="8b79724f-5071-4af8-adfd-a9effce72d70" x="350" y="70" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Cuotas 	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="c7971228-087e-4bf8-8018-d415096c80e9" x="350" y="80" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Inicial	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="5b5995ed-a6ea-4d28-81d2-e33e370a8980" x="350" y="90" width="43" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Á. Constr.	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="bfd99566-c9a2-4251-a5a4-71358dd8b4b3" x="393" y="60" width="70" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA["20"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="6ba53771-3f50-4444-a4ae-ed38cdb7a98c" x="393" y="70" width="70" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 999.67"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="19c23ba0-4862-4c1a-a78b-abaa087e336b" x="393" y="80" width="70" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 3 000.00"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="c8f373ec-a724-4798-80de-81e793d67e32" x="393" y="90" width="70" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 30"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="351">
+			<element kind="line" uuid="d1e65dc5-35e3-480b-a786-380a215304e7" positionType="Float" mode="Opaque" x="30" y="0" width="500" height="1" forecolor="#000000" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="horizontal"/>
+			</element>
+			<element kind="line" uuid="394cd433-0d5f-4a8f-b901-755cfd1be32b" x="280" y="20" width="1" height="310">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="vertical"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="32d805b7-ba31-4e9f-8e23-8fc13d331469" stretchType="ElementGroupHeight" x="50" y="20" width="207" height="19" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[CONDICIONES GENERALES DE CUMPLIMIENTO OBLIGATORIO]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="46b50ca4-eebf-481e-aa03-e2ca561d2ef1" stretchType="ElementGroupHeight" x="300" y="20" width="207" height="19" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[CONDICIONES DE CONTRATACIÓN ]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="a187cd83-0660-496e-aad2-99ad3ab4a199" stretchType="ElementGroupHeight" x="50" y="50" width="207" height="40" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Este documento debe ser presentado junto al certificado de Bono Familiar Habitacional, al momento de hacerse la firma del contrato compraventa, el cliente indica que tiene conocimiento en cumplimiento de los requisitos del FMV.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="70509c30-e5bf-495a-87a8-63599f05a404" stretchType="ElementGroupHeight" x="50" y="90" width="207" height="120" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Si el cliente incumpliera las fechas pactadas en el cronograma o desista de firmar el Compromiso / Contrato Compraventa que corresponda, se entenderá que el cliente se retracta de continuar con la adquisición del inmueble objeto del presente convenio resolviéndose el mismo de acuerdo a lo regulado el Artículo N° 1430 del Código Civil sin necesidad de comunicación adicional alguna. Es decir, una vez verificado el incumplimiento del cliente el presente convenio quedará automáticamente resuelto aplicándose a una penalidad del 100% (Cien por ciento) del importe cancelado a la fecha del incumplimiento por parte del cliente por concepto de lucro cesante y daño emergente considerando las facilidades para la adquisición del inmueble que la vendedora otorga.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="2e099a1c-f8e5-48ce-a649-6e87f6e1d04f" stretchType="ElementGroupHeight" x="50" y="210" width="207" height="50" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Este documento es válido únicamente para la adquisición de una única unidad de vivienda, identificada plenamente, como consta en la parte superior del presente documento, no siendo válido para ningún otro tipo de transacción que no sea la separación de una unidad de vivienda.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b52f9dc9-a129-4822-a40e-bccc3eb0a4c4" stretchType="ElementGroupHeight" x="50" y="260" width="207" height="30" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Todos los trámites relacionados a este documento y al contrato que pudiera firmarse en base al mismo, son personales y deberán efectuarse únicamente en las oficinas de la empresa.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="9c71e756-920e-4cf3-8d8b-54fc9c833daf" stretchType="ElementGroupHeight" x="50" y="290" width="207" height="20" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Para la validez de este documento, el mismo se debe encontrar debidamente firmado por el cliente y asesor inmobiliario.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="67179610-8ba8-4e54-b4d2-526889cabbfb" stretchType="ElementGroupHeight" x="50" y="310" width="207" height="38" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[El cliente deberá haber cumplido con abonar el íntegro del monto ahorrado y el proyecto deberá contar con Código otorgado por el FMV. Por lo que se obliga a firmar el referido contrato en u]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="c93ff971-afc9-42cd-bf20-31fffe511707" x="30" y="50" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[1.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="6f811d55-1180-4902-a9cc-98f23760d2c2" x="30" y="90" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[2.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="ec106227-c5e3-4045-9f0f-c80a60d6fa71" x="30" y="210" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[3.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="4a6da889-71b4-4f30-9ab5-dacd424ae828" x="30" y="260" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[4.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="9cb56701-d544-4198-8b9e-18472eba6c52" x="30" y="290" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[5.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="251f0424-885e-4ae7-8e20-5a9f713d22c4" x="30" y="310" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[6.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="14f864ab-6888-4acf-ad8a-d7f03be9b85b" stretchType="ElementGroupHeight" x="310" y="50" width="207" height="30" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[El cliente manifiesta su intención de suscribir con la empresa un Compromiso/Contrato de Compraventa, respecto de la unidad de vivienda individualizada en el primer documento.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="62e085a8-b28c-43f0-865d-dbfe545da43e" stretchType="ElementGroupHeight" x="310" y="80" width="207" height="50" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Con la finalidad de asegurar la suscripción del Compromiso/Contrato de Compraventa, el cliente ha entregado a la empresa la suma acordada en este documento de las Condiciones Generales de Cumplimento Obligatorio, en calidad de arras.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="36133200-b8ad-43f4-a33c-326c1dd4a994" stretchType="ElementGroupHeight" x="310" y="130" width="207" height="50" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Si fuese la empresa quien se negase a suscribir el Compromiso/Contrato de Contraventa dentro del plazo establecido previamente en el cronograma, habiéndose pagado la totalidad de la vivienda, deberá devolver al cliente las arras que le fueron entregadas.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="39288ec2-c861-400d-b025-c61f68cfecd9" stretchType="ElementGroupHeight" x="310" y="180" width="207" height="30" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[Si el cliente resuelve el Compromiso/Contrato de Compraventa dentro del plazo establecido previamente, se descontará el 100%del monto total aportado.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="e5ddb9ab-cbd5-4def-bcfb-b8688b8afe1c" stretchType="ElementGroupHeight" x="310" y="210" width="207" height="40" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[El cliente autoriza al vendedor al llenado de la letra de cambio firmado y adjunta al siguiente documento hasta el importe total del saldo restante para la cancelación más los costos que ocasione el incumplimiento del pago.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="21f62c80-4ffb-423a-a490-7d94c7a8c3cc" stretchType="ElementGroupHeight" x="310" y="250" width="207" height="20" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[La empresa puede cambiar las condiciones del vigente convenio de separación de acuerdo con las condiciones del mercado.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="1c80d52e-f205-44da-8417-5f719a6deb2d" stretchType="ElementGroupHeight" x="310" y="270" width="207" height="30" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[La fecha de entrega será la que se indique en el Contrato de Compraventa, considerando un plazo de 24 meses contados a partir del desembolso del cliente por parte del FMV.]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="a16454bb-6236-49cb-9ae9-4f43320e5aee" stretchType="ElementGroupHeight" x="310" y="300" width="207" height="30" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="false" hTextAlign="Justified" vTextAlign="Top">
+				<text><![CDATA[En caso de resolver el Compromiso/Contrato de Compraventa dentro del plazo establecido previamente, la devolución tendrá como plazo de 6 meses, contados desde la firma de la solicitud de devolución y/o resolución de convenio y/o contrato. ]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="6b07cf05-36e4-4927-9767-0dd9cafd8051" x="290" y="50" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[I.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="817a93af-4640-4dca-9f3d-4d627c0c5511" x="290" y="80" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[II.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="ee88b199-41bb-4af4-b6c4-b546d12a6d5f" x="290" y="130" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[III.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="8b8847e0-3cc5-4dcc-ae80-bad7966d4105" x="290" y="180" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[IV.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="5a90db96-3d96-4bfb-a58e-218eb0236787" x="290" y="210" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[V.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="45ba096a-623a-4ee3-a650-71e907318b9e" x="290" y="250" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[VI.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="c385c483-0421-4c13-a8e1-9277fee5fc26" x="290" y="270" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[VII.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b7e5312d-8982-4124-9f35-d9c2227a9710" x="290" y="300" width="20" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[VIII.]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+		<band height="141">
+			<element kind="line" uuid="05fcc5b3-fd5b-4280-954b-8caf7bfbcb84" positionType="Float" mode="Opaque" x="30" y="0" width="500" height="1" forecolor="#000000" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="horizontal"/>
+			</element>
+			<element kind="staticText" uuid="43062c26-cada-4f1f-8e5d-461c8828983a" stretchType="ElementGroupHeight" x="226" y="10" width="108" height="10" markup="styled" fontName="Times New Roman" fontSize="8.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[ESTRUCTURA DE PAGOS]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b7783a13-c3b9-43c0-bbe1-b36a86748726" x="200" y="30" width="84" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Precio de la vivienda	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="6c25ee63-da01-4ca7-a497-e2283e5ec2a2" x="200" y="40" width="84" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Descuento	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="24961bb2-0c34-44a0-b04e-5c1d0a606266" x="200" y="50" width="84" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[BFH 2024		:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="6276f4c9-6525-424f-8f3d-c91b7a16730f" x="200" y="60" width="84" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Saldo Precio Total	:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="bd87af6b-bebf-409a-b93e-301b426114f6" x="310" y="30" width="73" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 74202.00"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="6ebe443e-abbb-4327-a319-9da03e87fbc2" x="310" y="40" width="73" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 00.00"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="6d2b9b14-4670-45d3-9013-61d0da82ff25" x="310" y="50" width="73" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 40202.00"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="2fe42bf3-c210-4fa9-b188-8c3143f86eb8" x="310" y="60" width="73" height="10" fontName="Times New Roman" fontSize="8.0">
+				<expression><![CDATA[" s/. 32000.00"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="92f8fa4f-7ed5-4a98-badd-a31c36349559" x="30" y="79" width="55" height="10" fontName="Times New Roman" fontSize="8.0">
+				<text><![CDATA[Fecha: Chiclayo,]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="2c9ed472-d28f-41c4-baa3-5f897b35b748" key="" x="85" y="79" width="105" height="10" fontName="Times New Roman" fontSize="8.0" linkType="None" linkTarget="Self">
+				<expression><![CDATA[new SimpleDateFormat("dd 'de' MMMM 'del' yyyy", new Locale("es", "ES")).format(new Date())
+]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="fecha_registro"/>
+			</element>
+			<element kind="line" uuid="69a431c9-375a-4581-b607-554736223183" positionType="Float" mode="Opaque" x="30" y="130" width="150" height="1" forecolor="#4A4949" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="horizontal"/>
+			</element>
+			<element kind="line" uuid="761c3cc6-f329-4052-8658-388063b99a1d" positionType="Float" mode="Opaque" x="200" y="130" width="150" height="1" forecolor="#4A4949" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="horizontal"/>
+			</element>
+			<element kind="line" uuid="bd06189a-e53b-4404-9f6f-3b1ed6668786" positionType="Float" mode="Opaque" x="370" y="130" width="150" height="1" forecolor="#4A4949" backcolor="#FFFFFF">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<property name="com.jaspersoft.studio.element.name" value="horizontal"/>
+			</element>
+			<element kind="staticText" uuid="678fc63d-9152-4b9f-a2e6-c75aed63ec47" x="90" y="131" width="29" height="10" fontName="Times New Roman" fontSize="8.0" hTextAlign="Center">
+				<text><![CDATA[Asesor]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="148679b8-fcb0-4a05-b095-2c5435d7a146" x="410" y="131" width="70" height="10" fontName="Times New Roman" fontSize="8.0" hTextAlign="Center">
+				<text><![CDATA[V° B° D. Lazo ]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="staticText" uuid="3be856ad-687b-461a-b99a-27b57067b8c9" x="261" y="131" width="29" height="10" fontName="Times New Roman" fontSize="8.0" hTextAlign="Center">
+				<text><![CDATA[Cliente]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+		</band>
+	</detail>
+</jasperReport>

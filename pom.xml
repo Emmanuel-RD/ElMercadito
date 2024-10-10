@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>utp.edu.pe</groupId>
@@ -8,7 +8,6 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>ElMercadito</name>
-  <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
@@ -28,29 +27,72 @@
     </dependencies>
   </dependencyManagement>
 
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <scope>test</scope>
     </dependency>
-    <!-- Optionally: parameterized tests support -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <!-- JasperReports -->
+    <dependency>
+      <groupId>net.sf.jasperreports</groupId>
+      <artifactId>jasperreports</artifactId>
+      <version>7.0.0</version>
+    </dependency>
+
+    <!-- iText 7 -->
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>kernel</artifactId>
+      <version>7.1.16</version>
+    </dependency>
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>layout</artifactId>
+      <version>7.1.16</version>
+    </dependency>
+
+    <!-- Dependencias adicionales de JasperReports -->
+    <dependency>
+      <groupId>net.sf.jasperreports</groupId>
+      <artifactId>jasperreports-fonts</artifactId>
+      <version>7.0.0</version> <!-- Para fuentes adicionales -->
+    </dependency>
+    <dependency>
+      <groupId>net.sf.jasperreports</groupId>
+      <artifactId>jasperreports-groovy</artifactId>
+      <version>7.0.0</version> <!-- Si necesitas soporte de Groovy -->
+    </dependency>
+
+    <!-- Dependencias de Groovy -->
+    <dependency>
+      <groupId>org.codehaus.groovy</groupId>
+      <artifactId>groovy</artifactId>
+      <version>3.0.8</version> <!-- O la última versión estable -->
+    </dependency>
+
+    <!-- SLF4J Logger para evitar advertencias -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.32</version> <!-- O la última versión -->
+    </dependency>
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <pluginManagement>
       <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.4.0</version>
         </plugin>
-        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.3.1</version>
@@ -75,7 +117,6 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>3.1.2</version>
         </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.12.1</version>
